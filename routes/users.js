@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   //res.send('respond with a resource');
-  res.render('users', {layout: 'layout', users: data, listExists: true});
+  res.render('users', {title:'User List', users: data, listExists: true});
 });
 
 module.exports = router;
