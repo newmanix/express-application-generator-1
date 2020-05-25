@@ -2,9 +2,15 @@
 {{!-- if it’s true then the list will be rendered --}}
 {{!-- if the value is equal to false the list will not be rendered --}}
 {{#if listExists}} 
-  <ul>
-    {{#each suggestedChamps}}
-      <li class={{this.lane}}>{{this.name}}</li>
+    {{#each users}}
+      <p>
+        <b>id:</b> {{this.id}}<br />
+        <b>first_name:</b> {{this.first_name}}<br />
+        <b>last_name:</b> {{this.last_name}}<br />
+        <b>email:</b> {{this.email}} 
+      </p>
     {{/each}}
-  </ul>
+    
+{{else}}
+  <p>Currently there are no users</p>
 {{/if}}
