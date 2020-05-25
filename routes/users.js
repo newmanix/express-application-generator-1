@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var data = require('../data/test.json');//user data from JSON
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
